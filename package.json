@@ -20,7 +20,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "firebase": "npm run build && firebase deploy",
-    "github": "git commit -am \"some changes\" && git push github master"
+    "github": "git commit -am \"automated changes\" && git push github master"
   },
   "eslintConfig": {
     "extends": "react-app"
