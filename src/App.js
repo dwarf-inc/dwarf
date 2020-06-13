@@ -1,11 +1,12 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import Home from "./pages/home";
 import About from "./pages/about";
 import Product from "./pages/product";
 import Images from "./pages/images";
 import Contact from "./pages/contact";
+import SingleProduct from "./pages/SingleProduct";
 import NotFound from "./pages/404";
 
 import "./css/header.scss";
@@ -27,6 +28,9 @@ function App() {
         </Route>
         <Route path="/about">
           <About />
+        </Route>
+        <Route path="/products/:id">
+          <SingleProduct />
         </Route>
         <Route exact path="/">
           <Home />
