@@ -18,10 +18,14 @@ const Images = () => {
             <img src="https://unsplash.it/202" alt="img"></img>
             <img src="https://unsplash.it/204" alt="img"></img>
             <img src="https://unsplash.it/205" alt="img"></img>
+
+
             <img src="https://unsplash.it/206" alt="img"></img>
+
           </div>
         </div>
       </div>
+
     </Layout>
   );
 };

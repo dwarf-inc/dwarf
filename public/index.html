@@ -17,5 +17,26 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+    
+      <!-- Zoho -->
+    <script type="text/javascript">
+      var $zoho = $zoho || {};
+      $zoho.salesiq = $zoho.salesiq || {
+        widgetcode:
+          "10945d185cfc392a4f1eb60063940d96d2eefa4479303a117650c014d05b36bd",
+        values: {},
+        ready: function () {},
+      };
+      var d = document;
+      s = d.createElement("script");
+      s.type = "text/javascript";
+      s.id = "zsiqscript";
+      s.defer = true;
+      s.src = "https://salesiq.zoho.in/widget";
+      t = d.getElementsByTagName("script")[0];
+      t.parentNode.insertBefore(s, t);
+      d.write("<div id='zsiqwidget'></div>");
+    </script>
+
   </body>
 </html>
