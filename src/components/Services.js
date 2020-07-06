@@ -6,7 +6,8 @@ const Services = () => {
   return (
     <>
       <div className="sp-container ">
-        <Link to="/products/medicaps">
+        {/* <Link to="/products/medicaps"> */}
+        <Link to="/test">
           <div className="sp-card background-third">
             <h1>Medicaps </h1>
           </div>

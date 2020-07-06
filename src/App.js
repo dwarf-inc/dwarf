@@ -8,6 +8,7 @@ import Images from "./pages/images";
 import Contact from "./pages/contact";
 import SingleProduct from "./pages/SingleProduct";
 import NotFound from "./pages/404";
+import Test from "./pages/test";
 
 import "./css/header.scss";
 import "./css/index.css";
@@ -17,6 +18,9 @@ function App() {
   return (
     <Router>
       <Switch>
+        <Route path="/test">
+          <Test />
+        </Route>
         <Route path="/product">
           <Product />
         </Route>

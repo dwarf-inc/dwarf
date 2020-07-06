@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Typewriter from "typewriter-effect";
-import { TimelineMax } from "gsap";
 
 //import component
 import FixedItems from "./FixedItems";
 
-import { gsap } from "gsap";
+import { gsap, TimelineMax } from "gsap";
 import { CSSPlugin } from "gsap/CSSPlugin";
 // Force CSSPlugin to not get dropped during build
 gsap.registerPlugin(CSSPlugin);
