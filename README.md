@@ -1,6 +1,6 @@
 # www.dwarf.co.in
 
-![Dwarf](https://www.dwarf.co.in/static/media/logo.b1337c6a.png "Dwarf")
+![Dwarf Logo](https://www.dwarf.co.in/static/media/logo.b1337c6a.png "Dwarf")
 
     firebase
     react
