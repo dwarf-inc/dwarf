@@ -21,4 +21,4 @@ git commit "updates"
 git push github master
 ```
 
-dwarf-inc/dwarf-client-react
+# dwarf-inc/dwarf

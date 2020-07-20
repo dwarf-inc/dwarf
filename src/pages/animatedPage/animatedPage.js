@@ -1,18 +1,19 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 // css
-import "../css/test.css";
+import "../../css/animatedPage.scss";
 
-import logo from "../images/logo.png";
-import logoWebp from "../images/logo.webp";
+import logo from "../../images/logo.png";
+import logoWebp from "../../images/logo.webp";
 // gsap
 import { gsap, TimelineMax, TweenMax, Expo } from "gsap";
 import { CSSPlugin } from "gsap/CSSPlugin";
 // Force CSSPlugin to not get dropped during build
 gsap.registerPlugin(CSSPlugin);
 
-const Test = () => {
+const AnimatedPage = (props) => {
   const t1 = new TimelineMax();
+  console.log(props);
 
   useEffect(() => {
     animatePage();
@@ -123,4 +124,4 @@ const Test = () => {
   );
 };
 
-export default Test;
+export default AnimatedPage;

@@ -7,7 +7,7 @@ const Services = () => {
     <>
       <div className="sp-container ">
         {/* <Link to="/products/medicaps"> */}
-        <Link to="/test">
+        <Link to="/medicaps">
           <div className="sp-card background-third">
             <h1>Medicaps </h1>
           </div>
