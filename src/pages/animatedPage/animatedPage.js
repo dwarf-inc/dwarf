@@ -86,8 +86,11 @@ const AnimatedPage = (props) => {
           </div>
         </Link>
         <div class="info">
-          <a href="#">FAQ</a>
-          <a href="#">Help</a>
+          <li class="social">
+            <ul>Facebook</ul>
+            <ul>Instagram</ul>
+            <ul>Twitter</ul>
+          </li>
         </div>
       </div>
 
@@ -111,13 +114,7 @@ const AnimatedPage = (props) => {
             <p>Read More</p>
           </Link>
         </div>
-        {/* <div class="social-container">
-          <li class="social">
-            <ul>Facebook</ul>
-            <ul>Instagram</ul>
-            <ul>Twitter</ul>
-          </li>
-        </div> */}
+        {/* <div class="social-container"></div> */}
       </div>
       <div class="center-container"></div>
     </div>

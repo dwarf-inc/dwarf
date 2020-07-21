@@ -5,6 +5,15 @@
   padding: 0;
   box-sizing: border-box;
 }
+@media (max-width: 1100px) {
+  .containers {
+    width: 100%;
+    height: 100vh;
+    color: black;
+    display: flex;
+    overflow: hidden;
+  }
+}
 
 @media (min-width: 1100px) {
   .containers {
@@ -143,7 +152,8 @@
   .social ul {
     margin-right: 1rem;
     font-weight: 700;
-    font-family: "helvetica";
+    font-size: 0.75rem;
+    cursor: pointer;
   }
 
   .first-block {
