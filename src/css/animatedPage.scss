@@ -13,6 +13,190 @@
     display: flex;
     overflow: hidden;
   }
+
+  .left-container {
+    background-color: rgba(33, 33, 240, 0.1);
+    height: 100%;
+    width: 30%;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .right-container {
+    position: relative;
+    background-color: white;
+    height: 100%;
+    width: 70vw;
+  }
+
+  .center-container {
+    position: absolute;
+    top: 25vh;
+    left: 15vw;
+    height: 50vh;
+    width: 40vw;
+    background-image: url("https://images.pexels.com/photos/593451/pexels-photo-593451.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-size: cover;
+    -webkit-box-shadow: 7px 29px 49px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 7px 29px 49px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 7px 29px 49px 0px rgba(0, 0, 0, 0.5);
+  }
+
+  .t-logo {
+    padding: 3rem;
+    font-size: 1rem;
+    font-family: "helvetica";
+    color: black;
+  }
+  .t-logo img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .info {
+    display: flex;
+    padding: 3rem;
+    font-size: 1rem;
+  }
+
+  .info a {
+    text-decoration: none;
+    margin-left: 1rem;
+    color: black;
+  }
+
+  .story {
+    position: absolute;
+    height: 60%;
+    left: 30vw;
+    top: 30vh;
+  }
+
+  .story h1 {
+    font-size: 5rem;
+    margin-bottom: 2rem;
+  }
+  .story h1::before {
+    content: "";
+    position: absolute;
+    width: 190px;
+    height: 18px;
+    top: -8px;
+    left: 0;
+    background-color: rgba(235, 63, 63, 1);
+  }
+
+  .story p {
+    margin-left: 0.5rem;
+    font-size: 1.2rem;
+    padding-right: 10rem;
+    font-family: "helvetica";
+    color: #212121;
+  }
+
+  .story p:nth-child(3) {
+    margin-top: 5rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    font-family: "helvetica";
+  }
+
+  .menu-container {
+    position: absolute;
+    top: 3rem;
+    right: 4rem;
+    width: 50px;
+    height: 45px;
+  }
+  .menu,
+  .menu:after,
+  .menu:before {
+    width: 50px;
+    height: 5px;
+  }
+
+  .menu {
+    position: relative;
+    transform: translateY(20px);
+    background: black;
+  }
+
+  .menu:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 15px;
+    background: black;
+  }
+  .menu:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 15px;
+    background: black;
+  }
+
+  .social-container {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+  }
+
+  .social {
+    display: flex;
+  }
+
+  .social ul {
+    margin-right: 1rem;
+    font-weight: 700;
+    font-size: 0.75rem;
+    cursor: pointer;
+    color: #212121;
+  }
+  .fb a {
+    color: blue;
+  }
+  .linkedin a {
+    color: #0072b1;
+  }
+
+  .first-block {
+    position: absolute;
+    width: 0%;
+    height: 100vh;
+    background: rgba(33, 33, 240, 0.1);
+    animation: go-left 4s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+    left: 0;
+  }
+
+  @keyframes go-left {
+    0% {
+      left: 0;
+      width: 0%;
+    }
+    50% {
+      left: 0;
+      width: 100%;
+    }
+    100% {
+      left: 100%;
+      width: 0;
+    }
+  }
+
+  .medicaps-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    section {
+      margin: 100px 0;
+      h1 {
+      }
+      p {
+      }
+    }
+  }
 }
 
 @media (min-width: 1100px) {
@@ -78,7 +262,7 @@
 
   .story {
     position: absolute;
-    height: 40%;
+    height: 60%;
     left: 30vw;
     top: 30vh;
   }
@@ -86,15 +270,23 @@
   .story h1 {
     font-size: 5rem;
     margin-bottom: 2rem;
-    font-family: "Garamond";
+  }
+  .story h1::before {
+    content: "";
+    position: absolute;
+    width: 190px;
+    height: 18px;
+    top: -8px;
+    left: 0;
+    background-color: rgba(235, 63, 63, 1);
   }
 
   .story p {
     margin-left: 0.5rem;
     font-size: 1.2rem;
-    padding-right: 20rem;
-    font-family: "Garamond";
-    color: black;
+    padding-right: 10rem;
+    font-family: "helvetica";
+    color: #212121;
   }
 
   .story p:nth-child(3) {
@@ -156,6 +348,12 @@
     cursor: pointer;
     color: #212121;
   }
+  .fb a {
+    color: blue;
+  }
+  .linkedin a {
+    color: #0072b1;
+  }
 
   .first-block {
     position: absolute;
@@ -178,6 +376,18 @@
     100% {
       left: 100%;
       width: 0;
+    }
+  }
+
+  .medicaps-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    section {
+      margin: 100px 0;
+      h1 {
+      }
+      p {
+      }
     }
   }
 }

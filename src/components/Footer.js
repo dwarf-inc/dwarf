@@ -27,6 +27,9 @@ const Footer = () => {
               <Link to="/contact">
                 <h3 className="unactive">Contact</h3>
               </Link>
+              <Link to="/faq">
+                <h3 className="unactive">FAQ</h3>
+              </Link>
             </div>
             <div className="to-top">
               <i className="fa fa-arrow-circle-o-up" aria-hidden="true"></i>{" "}

@@ -9,15 +9,21 @@ import Contact from "./pages/contact";
 import SingleProduct from "./pages/SingleProduct";
 import NotFound from "./pages/404";
 import AnimatedPage from "./pages/animatedPage/animatedPage";
+import Faq from "./pages/faq";
 
+// CSS Imports
 import "./css/header.scss";
 import "./css/index.css";
-import "./css/product.css";
+import "./css/product.scss";
+import "./css/faq.scss";
 
 function App() {
   return (
     <Router>
       <Switch>
+        <Route exact path="/faq">
+          <Faq />
+        </Route>
         <Route path="/medicaps">
           <AnimatedPage />
         </Route>
