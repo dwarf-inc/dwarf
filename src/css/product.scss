@@ -1,0 +1,180 @@
+/* view product Home*/
+.ex-vp {
+  background-color: var(--theme-color);
+  font-size: 5vw;
+  padding: 50px;
+  color: #414141;
+}
+
+/* products products products products products products 
+----------------------------------------------- */
+
+/* single product single product single product single product -------------------------
+    single product single product single product single product ------------------------ */
+
+.head-list {
+  margin-top: 30px;
+}
+.head-list li {
+  font-size: 22px;
+  color: #414141;
+  cursor: pointer;
+  margin: 10px 50px;
+  line-height: initial;
+}
+
+.sp {
+  width: 90%;
+  margin: 50px auto;
+  padding: 20px;
+  color: #121212;
+}
+.sp h3 {
+  margin: 40px 0;
+  color: #414141;
+}
+
+/* content */
+.content-wrapper {
+  width: 90%;
+  margin: 30px auto;
+  background-color: #fcfcfc;
+  padding: 30px;
+  border-radius: 5px;
+  font-size: 18px;
+}
+.content-wrapper h1 {
+  color: #20bf6b;
+}
+.content-wrapper section {
+  margin: 30px 0;
+}
+.content-wrapper ul {
+  margin: 0;
+}
+.content-wrapper p {
+  font-size: 18px;
+}
+.content-wrapper ol li,
+.content-wrapper ul li {
+  font-weight: bold;
+  font-size: 16px;
+  list-style: circle;
+  margin-left: 40px;
+}
+
+.content-image {
+  width: 100%;
+  height: auto;
+}
+.content-image .q-connect {
+  width: 100%;
+  max-height: 400px;
+}
+.content-image video {
+  width: 100%;
+}
+
+@media (max-width: 700px) {
+  .content-wrapper {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .content-image {
+    width: 100%;
+    height: 200px;
+  }
+
+  .content-wrapper p {
+    font-size: 16px;
+  }
+}
+
+/* table */
+#table-dc {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+
+  overflow-x: auto;
+}
+
+#table-dc td,
+#table-dc th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#table-dc tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#table-dc tr:hover {
+  background-color: #ddd;
+}
+
+#table-dc th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4caf50;
+  color: white;
+}
+
+/* single product container ------------------------------------  */
+.sp-container {
+  width: 80%;
+  margin: 20px auto;
+}
+.sp-card {
+  background-image: radial-gradient(
+    circle farthest-corner at -3.3% 48%,
+    rgba(141, 146, 239, 1) 0%,
+    rgba(99, 229, 254, 1) 90%
+  );
+  height: 300px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.medicaps-card {
+  background-color: #f0f0f0;
+  background-image: none;
+  color: #121212;
+  h1 {
+    position: relative;
+  }
+  h1::before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 10px;
+    top: -10px;
+    left: 0;
+    background-color: rgba(235, 63, 63, 1);
+  }
+}
+.mc-smart {
+  h1::before {
+    width: 100px;
+  }
+}
+
+.background-second {
+  background-image: linear-gradient(
+    280.5deg,
+    rgba(246, 56, 56, 0.73) 6.1%,
+    rgba(215, 88, 11, 0.73) 79.7%
+  );
+}
+// .background-third {
+//   background-image: linear-gradient(
+//     109.6deg,
+//     rgba(123, 90, 224, 1) 11.2%,
+//     rgba(164, 46, 253, 1) 32.6%,
+//     rgba(213, 56, 234, 1) 62.7%,
+//     rgba(251, 138, 52, 1) 100.2%
+//   );
+// }

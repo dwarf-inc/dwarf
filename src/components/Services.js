@@ -8,21 +8,21 @@ const Services = () => {
       <div className="sp-container ">
         {/* <Link to="/products/medicaps"> */}
         <Link to="/medicaps">
-          <div className="sp-card background-third">
-            <h1>Medicaps </h1>
+          <div className="sp-card background-third medicaps-card">
+            <h1>MediCaps</h1>
           </div>
         </Link>
       </div>
-      <div className="sp-container">
+      <div className="sp-container  mc-smart ">
         <Link to="/products/smart_library">
-          <div className="sp-card">
+          <div className="sp-card medicaps-card">
             <h1>Smart Library</h1>
           </div>
         </Link>
       </div>
       <div className="sp-container">
         <Link to="/products/digital_classes">
-          <div className="sp-card background-second">
+          <div className="sp-card background-second medicaps-card  mc-smart">
             <h1>Digital Classes</h1>
           </div>
         </Link>

@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 
 const FixedItems = () => {
   return (
@@ -24,7 +24,7 @@ const FixedItems = () => {
         </div>
         <div className="linkedin social-stag">
           <a
-            href="https://www.linkedin.com/company/dwarfx-pvt-ltd/"
+            href="https://www.linkedin.com/company/medicaps/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -33,7 +33,7 @@ const FixedItems = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default FixedItems
+export default FixedItems;
