@@ -3,8 +3,6 @@ import { Link } from "react-router-dom";
 // css
 import "../../css/animatedPage.scss";
 
-import logo from "../../images/logo.png";
-import logoWebp from "../../images/logo.webp";
 // gsap
 import { gsap, TimelineMax, Expo } from "gsap";
 import { CSSPlugin } from "gsap/CSSPlugin";
@@ -134,7 +132,6 @@ const AnimatedPage = (props) => {
             <p>Read More</p>
           </Link> */}
           </div>
-          {/* <div class="social-container"></div> */}
         </div>
         <div class="center-container"></div>
       </div>
