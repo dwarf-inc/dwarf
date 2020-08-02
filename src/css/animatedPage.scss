@@ -5,6 +5,14 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+@media (max-width: 500px) {
+  .story h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+}
+
 @media (max-width: 1100px) {
   .containers {
     width: 100%;
@@ -12,12 +20,13 @@
     color: black;
     display: flex;
     overflow: hidden;
+    position: relative;
   }
 
   .left-container {
     background-color: rgba(33, 33, 240, 0.1);
     height: 100%;
-    width: 30%;
+    width: 0%;
     color: black;
     display: flex;
     flex-direction: column;
@@ -26,29 +35,18 @@
 
   .right-container {
     position: relative;
-    background-color: white;
+    background-color: rgba(33, 33, 240, 0.01);
     height: 100%;
-    width: 70vw;
-  }
-
-  .center-container {
-    position: absolute;
-    top: 25vh;
-    left: 15vw;
-    height: 50vh;
-    width: 40vw;
-    background-image: url("https://images.pexels.com/photos/593451/pexels-photo-593451.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-    background-size: cover;
-    -webkit-box-shadow: 7px 29px 49px 0px rgba(0, 0, 0, 0.5);
-    -moz-box-shadow: 7px 29px 49px 0px rgba(0, 0, 0, 0.5);
-    box-shadow: 7px 29px 49px 0px rgba(0, 0, 0, 0.5);
+    width: 100vw;
   }
 
   .t-logo {
-    padding: 3rem;
+    position: absolute;
+    padding: 2rem;
     font-size: 1rem;
     font-family: "helvetica";
     color: black;
+    z-index: 1;
   }
   .t-logo img {
     width: 50px;
@@ -57,7 +55,7 @@
 
   .info {
     display: flex;
-    padding: 3rem;
+    padding: 1rem;
     font-size: 1rem;
   }
 
@@ -67,10 +65,34 @@
     color: black;
   }
 
+  .social-container {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+  }
+
+  .social {
+    display: flex;
+  }
+
+  .social ul {
+    margin-right: 1rem;
+    font-weight: 700;
+    font-size: 0.75rem;
+    cursor: pointer;
+    color: #212121;
+  }
+  .fb a {
+    color: blue;
+  }
+  .linkedin a {
+    color: #0072b1;
+  }
+
   .story {
     position: absolute;
     height: 60%;
-    left: 30vw;
+    left: 10vw;
     top: 30vh;
   }
 
@@ -106,7 +128,7 @@
   .menu-container {
     position: absolute;
     top: 3rem;
-    right: 4rem;
+    right: 1rem;
     width: 50px;
     height: 45px;
   }
@@ -136,30 +158,6 @@
     left: 0;
     top: 15px;
     background: black;
-  }
-
-  .social-container {
-    position: absolute;
-    bottom: 2rem;
-    right: 2rem;
-  }
-
-  .social {
-    display: flex;
-  }
-
-  .social ul {
-    margin-right: 1rem;
-    font-weight: 700;
-    font-size: 0.75rem;
-    cursor: pointer;
-    color: #212121;
-  }
-  .fb a {
-    color: blue;
-  }
-  .linkedin a {
-    color: #0072b1;
   }
 
   .first-block {
